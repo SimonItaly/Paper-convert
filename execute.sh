@@ -13,7 +13,7 @@ if dpkg -l paper-icon-theme &> /dev/null; then
 	sudo ./scripts/Paper-colour.sh
 	sudo ./scripts/Paper-trash.sh
 
-	sudo gtk-update-icon-cache /usr/share/icons/Paper
+	sudo gtk-update-icon-cache -q /usr/share/icons/Paper
 	echo "Icon cache update: done"
 	echo "Exiting..."
 else
